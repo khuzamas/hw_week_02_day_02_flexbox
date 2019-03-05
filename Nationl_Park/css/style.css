@@ -1,49 +1,102 @@
 
 /* header & nav */
 
-header {
-
+header{
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 header .logo, header nav {
-
+  display: flex;
+  box-sizing: border-box;
 }
 
+li {
+  display: flex;
+  float: left; 
+}
+
+.navigation{
+  margin: 0;
+}
 
 .container .aboutrow {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 
 /* feature */
 
 .feature {
+  display: flex;
+ 
+}
 
+.feat-left{
+  float: left;
+
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 2;
+}
+
+.feat-right{
+  float:right;
+  
 }
 
 /* cta */
 
+.contactbtn{
+  margin: 0 auto;
+  align-self: center;
+}
+ 
 .cta .container {
-
+  display: flex;
+  align-content: flex-start;
 }
 
+
+
+.clearfix{
+  clear: both;
+}
 
 /* footer */
 
 footer {
-
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .footer-left {
-
+  display: flex;
+   
 }
 
 .footer-left .footer-col {
-
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  margin: 0 120px;
+  justify-content: center;
+  
 }
 
-.footer-right {
+.footernav{
+  display: flex;
+  flex-flow: column;
+}
 
+
+.footer-right {
+  align-content:flex-end;
 }
 
 /* ======+++++======++++=====+++=== */
@@ -178,11 +231,11 @@ nav ul li {
   background-color: #167C80;
 }
 
-.feat-left {
+/* .feat-left {
   background-image: url('../assets/glacier.jpg');
   background-size:cover;
   background-position:center center;
-}
+} */
 
 .feat-right {
   padding: 50px;
